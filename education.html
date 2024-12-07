@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 70px; /* Prevent content from hiding under the fixed navbar */
+        }
+
+        header {
+            background-color: #d2b48c;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: #8B4513; /* Darker brown for hover */
+            border-radius: 5px;
+        }
+
+        header nav a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        h1 {
+            background-color: #d2b48c;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            background-color: #d2b48c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 60%;
+        }
+
+        .Primary-box, .Secondary-box, .Diploma-box {
+            background-color: #fff5e1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 60%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .Primary-box img, .Secondary-box img, .Diploma-box img {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: brown;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="education.html" class="active">Education</a> <!-- Highlight the active link -->
+    </nav>
+</header>
+
+<h1>ˏˋ°•*⁀➷ This is My Education ⋆·˚ ༘ *</h1>
+
+<h2>PRIMARY SCHOOL</h2>
+<div class="Primary-box">
+    <div class="primary-school">
+        <img src="images/primary.jpg" alt="This is my primary school">
+        <img src="images/primary1.jpg" alt="This is me in my primary school">
+        <h3>Sekolah Rendah Kebangsaan Sri Langat Kluster Kecemerlangan</h3>
+        <p>I'm starting my primary school at age 7 years old at Sk Sri Langat, Banting. At 9 years old in 3rd Grade, I was active in sports. Sports that I joined in my Primary School were volleyball and netball. At the same time, I also focused on my academics until I successfully passed my UPSR with great results.</p>
+    </div>
+</div>
+
+<h2>SECONDARY SCHOOL</h2>
+<div class="Secondary-box">
+    <div class="secondary-school">
+        <img src="images/secondary.jpg" alt="This is my secondary school">
+        <img src="images/secondary1.jpg" alt="This is me at secondary school">
+        <h3>Sekolah Menengah Jalan Kebun</h3>
+        <p>I started secondary school at SMK Jalan Kebun, Shah Alam. During this time, I became more involved in co-curricular activities, joining debate and science fairs. I balanced academics and extracurriculars, which helped me achieve great results in my SPM examination.</p>
+    </div>
+</div>
+
+<h2>DIPLOMA</h2>
+<div class="Diploma-box">
+    <div class="diploma">
+        <img src="images/diploma.jpg" alt="My diploma college">
+        <img src="images/diploma1.jpg" alt="This is me at my diploma institution">
+        <h3>Universiti Teknologi Mara Cawangan Negeri Sembilan, Kampus Rembau</h3>
+        <p>I pursued my Diploma in Information Management at UiTM, Rembau. This was a transformative phase where I developed technical skills, worked on projects, and participated in various competitions. The experience equipped me for future challenges in my career path.</p>
+    </div>
+</div>
+
+</body>
+</html>

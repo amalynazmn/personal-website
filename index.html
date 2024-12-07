@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        
+        body {
+            background: url('images/background.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(210, 180, 140, 0.8); 
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 1.5;
+        }
+
+        .nav {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover {
+            background: #fff;
+            color: #35424a;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 90px;
+            margin: 90px auto;
+            width: 100%;
+            max-width: 1000px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image-section img {
+			width: 300px; 
+			height: 300px; 
+			border-radius: 50%;
+			object-fit: cover;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+        .text-section {
+            color: #fff;
+            text-align: center;
+        }
+
+        .text-section h2 {
+            color: #d2b48c;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .text-section p {
+            margin: 10px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        @media (min-width: 600px) {
+            .content {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .text-section {
+                text-align: left;
+                flex: 2;
+            }
+
+            .image-section {
+                flex: 1;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .nav a {
+                font-size: 1rem;
+            }
+
+            .text-section h2 {
+                font-size: 2rem;
+            }
+
+            .text-section p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆ GET TO KNOW ABOUT ME ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆</h1>
+    <div class="nav">
+        <a href="profile.html">✿ My Profile ✿</a>
+        <a href="experience.html">✿ My Experience ✿</a>
+        <a href="family.html">✿ My Family ✿</a>
+        <a href="gallery.html">✿ My Gallery ✿</a>
+        <a href="education.html">✿ My Education ✿</a>
+    </div>
+</header>
+
+<div class="content">
+    <div class="image-section">
+        <img src="images/me.jpg" alt="This is me">
+    </div>
+    <div class="text-section">
+        <h2>Hi! Welcome to My Personal Website!</h2>
+        <p><strong>NAME:</strong> AISYA AMALYN BINTI AZMAN</p>
+        <p><strong>STUDENT ID:</strong> 2022647998</p>
+        <p><strong>CLASS:</strong> N5CDIM1105H</p>
+    </div>
+</div>
+
+</body>
+</html>

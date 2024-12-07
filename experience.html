@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
+            padding-top: 70px; /* To prevent content from hiding under the fixed navbar */
+        }
+
+        header {
+            background-color: #d2b48c; 
+            padding: 10px 0;
+            width: 100%; 
+            position: fixed; 
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            z-index: 1000; 
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center; 
+        }
+
+        header nav a {
+            margin: 0 15px; 
+            color: white; 
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: #8B4513; /* Darker brown for hover */
+            border-radius: 5px;
+        }
+
+        header nav a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        h1 {
+            background-color: #d2b48c;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 80px; 
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        p {
+            color: brown;
+            line-height: 1.6; 
+            margin: 10px 0; 
+        }
+        
+        .Education-box, .Work-box, .Expertise-box {
+            background-color: #fff5e1; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 60%;
+            text-align: left; 
+            box-sizing: border-box;
+        }
+
+        .Education-box h2, .Work-box h2, .Expertise-box h2 {
+            background-color: #d2b48c; 
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }    
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s; 
+        }
+
+        .button:hover {
+            background-color: #ff69b4; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="education.html">Education</a>
+    </nav>
+</header>
+
+<h1>ˏˋ°•*⁀➷ This is My Experiences ⋆·˚ ༘ *</h1>
+
+<div class="Education-box">
+    <h2>MY EDUCATION & QUALIFICATION</h2>
+    <h3>🎀 DIPLOMA IN INFORMATION MANAGEMENT </h3>
+    𓆩♡𓆪 August 2022 - February 2025 (current) <br> 
+    𓆩♡𓆪 at Universiti Teknologi Mara Cawangan Negeri Sembilan, Kampus Rembau<br>
+    <h3>🎀 SIJIL PELAJARAN MALAYSIA (SPM) </h3>
+    𓆩♡𓆪 January 2017 - February 2022 <br>
+    𓆩♡𓆪 at Sekolah Menengah Jalan Kebun, Shah Alam<br>
+</div>
+
+<div class="Work-box">
+    <h2>MY WORK EXPERIENCES</h2>
+    <h3>🎀 PART-TIME PROMOTER </h3>
+    𓆩♡𓆪 February 2024 - March 2024 <br> 
+    𓆩♡𓆪 at Nestle Omega Plus
+    <h3>🎀 PARCEL PACKING ASSISTANT</h3>
+    𓆩♡𓆪 May 2022 - July 2022<br>
+    𓆩♡𓆪 at Niaco Shopee Store, Johan Setia<br>
+    <h3>🎀 SPELLING TEACHER</h3>
+    𓆩♡𓆪 December 2021 - May 2022<br>
+    𓆩♡𓆪 at Mummy Sham Tuition<br>
+</div>
+
+<div class="Expertise-box">
+    <h2>MY EXPERTISE</h2>
+    𓆩♡𓆪 Management Skills<br>
+    𓆩♡𓆪 Creativity<br>
+    𓆩♡𓆪 Negotiation Skills<br>
+    𓆩♡𓆪 Critical Thinking<br>
+    𓆩♡𓆪 Teamwork<br>
+    𓆩♡𓆪 Leadership<br>
+</div> 
+
+</body>
+</html>

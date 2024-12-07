@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 70px; /* To prevent content from hiding under the fixed navbar */
+        }
+
+        header {
+            background-color: #d2b48c;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: #8B4513; /* Darker brown for hover */
+            border-radius: 5px;
+        }
+
+        header nav a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        h1 {
+            background-color: #d2b48c;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: brown;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .biodata-box, .favorites-box, .interest-box, .socmed-box {
+            background-color: #fff5e1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 60%;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .biodata-box h2, .favorites-box h2, .interest-box h2, .socmed-box h2 {
+            background-color: #d2b48c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .socmed-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socmed-box img {
+            width: 60px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="education.html">Education</a>
+    </nav>
+</header>
+
+<h1>ˏˋ°•*⁀➷ This is My Profile ⋆·˚ ༘ *</h1>
+
+<img src="images/selfie.jpg" alt="This is me">
+
+<div class="biodata-box">
+    <h2>MY BIODATA</h2>
+    𓆩♡𓆪 Name: Aisya Amalyn Binti Azman<br>
+    𓆩♡𓆪 Age: 20 Years Old<br>
+    𓆩♡𓆪 Date of Birth: 31 May 2004<br>
+    𓆩♡𓆪 Place of Birth: Hospital Banting<br>
+    𓆩♡𓆪 No Tel: 011-6472450<br>
+    𓆩♡𓆪 Address: No 86, Jalan DPK 9, Taman Desa Permai Kundur, Rembau Negeri Sembilan<br>
+    𓆩♡𓆪 Email Address: amalyn31@icloud.com <a href="mailto:amalyn31@icloud.com">Mail me</a>
+</div>
+
+<div class="favorites-box">
+    <h2>MY FAVOURITE</h2>
+    𓆩♡𓆪 Colour: Brown, Black, White<br>
+    𓆩♡𓆪 Food: Chicken Butter Milk, Kueh Teow Goreng<br>
+    𓆩♡𓆪 Drink: Peach Tea, Caramel Latte<br>
+    𓆩♡𓆪 Movie: Magika<br>
+    𓆩♡𓆪 Series: Queen of Tears<br>
+    𓆩♡𓆪 Song: Pesan Terakhir by Lyodra
+</div>
+
+<div class="interest-box">
+    <h2>MY INTEREST</h2>
+    𓆩♡𓆪 Editing<br>
+    𓆩♡𓆪 Cafe Hunting<br>
+    𓆩♡𓆪 Reading a novel<br>
+    𓆩♡𓆪 Listening to music<br>
+    𓆩♡𓆪 Sketching<br>
+    𓆩♡𓆪 Spending time with beloved<br>
+</div>
+
+<div class="socmed-box">
+    <h2>MY SOCIAL MEDIA</h2>
+    <a href="https://www.x.com/kanekisyaa/"><img src="images/x.jpg" alt="Twitter Icon"></a>    
+    <a href="https://www.instagram.com/amalynazmn_/"><img src="images/ig_icon.png" alt="Instagram Icon"></a>    
+    <a href="https://www.tiktok.com/@aelynxi/"><img src="images/tiktok.jpg" alt="TikTok Icon"></a>   
+    <a href="https://www.facebook.com/malynazmn/"><img src="images/facebook.jpg" alt="Facebook Icon"></a>   
+</div>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 70px; /* Prevent content from hiding under the fixed navbar */
+        }
+
+        header {
+            background-color: #d2b48c; 
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: #8B4513; /* Darker brown for hover */
+            border-radius: 5px;
+        }
+
+        header nav a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        h1 {
+            background-color: #d2b48c;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            background-color: #d2b48c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 60%;
+        }
+        
+        img {
+            width: 850px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .Family-box, .Fmembers-box {
+            background-color: #fff5e1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 60%;
+            text-align: center;
+        }
+
+        .Fmembers-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .Fmembers-box .family-member img {
+            width: 400px; 
+            height: 400px;
+            object-fit: cover; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .Fmembers-box .family-member p {
+            color: brown;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        p {
+            color: brown;
+            line-height: 1.6; 
+            margin: 10px 0; 
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="family.html" class="active">Family</a> <!-- Active page -->
+        <a href="gallery.html">Gallery</a>
+        <a href="education.html">Education</a>
+    </nav>
+</header>
+
+<h1>ˏˋ°•*⁀➷ This is My Family ⋆·˚ ༘ *</h1>
+
+<h2>MY BELOVED FAMILY</h2>
+
+<div class="Family-box">
+    <img src="images/full_family.jpg" alt="This is my family">
+    <p> Family isn’t just bound by blood, it’s a circle of people who support, inspire, and stand by one another, celebrating every triumph and sharing every sorrow. It is a gift of timeless connection and a foundation built on love, creating a beautiful journey that lasts a lifetime.</p>
+</div>
+
+<h2>MY FAMILY MEMBERS</h2>
+
+<div class="Fmembers-box">
+    <div class="family-member">
+        <img src="images/abah.jpg" alt="This is my father">
+        <p>My Father</p>
+    </div>
+    
+    <div class="family-member">
+        <img src="images/mummy.jpg" alt="This is my mother">
+        <p>My Mother</p>
+    </div>
+
+    <div class="family-member">
+        <img src="images/ena.jpg" alt="This is my sister">
+        <p>(1) My Sister</p>
+    </div>
+
+    <div class="family-member">
+        <img src="images/ali.jpg" alt="This is my brother">
+        <p>(2) My Brother</p>
+    </div>
+
+    <div class="family-member">
+        <img src="images/malyn.jpg" alt="This is me">
+        <p>(3) Me</p>
+    </div>
+
+    <div class="family-member">
+        <img src="images/syahmi.jpg" alt="This is my younger brother">
+        <p>(4) Younger Brother</p>
+    </div>
+</div>
+
+</body>
+</html>
